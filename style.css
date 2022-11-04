@@ -20,6 +20,14 @@ body {
     align-items: center;
     gap: 50px;
     min-height: 100vh;
+    text-align: center;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 #search {
@@ -86,7 +94,9 @@ body {
     margin-top: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     font-size: 12px;
 } 
