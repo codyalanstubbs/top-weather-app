@@ -1,3 +1,4 @@
+const title = document.querySelector("title");
 const weatherIcon = document.querySelector(".icon");
 const locationDiv = document.querySelector(".location");
 const conditions = document.querySelector(".conditions");
@@ -66,7 +67,8 @@ function processData(json) {
 function displayData(data, units) {
     let tempUnits = getTempUnits(units);
     let speedUnits = getSpeedUnits(units);
-
+    
+    title.textContent = data.location + " | Weather";
     favicon.href = "http://openweathermap.org/img/wn/"+data.icon+"@2x.png";
     weatherIcon.src = "http://openweathermap.org/img/wn/"+data.icon+"@2x.png";
     locationDiv.textContent = data.location;
