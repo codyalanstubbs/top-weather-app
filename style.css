@@ -51,7 +51,8 @@ body {
     border: 2px solid rgb(236, 117, 83);
 }
 
-#submit:hover {    
+#submit:hover {  
+    cursor: pointer;  
     color: rgb(221, 48, 0);
     background-color: lightgrey;
     border: 2px solid black;
@@ -85,8 +86,19 @@ body {
     align-items: center;
 }
 
+.summaryMain {
+    display: flex;
+    align-items: center;
+}
+
+.temperature {
+    font-weight: 800;
+    font-size: 40px;
+}
+
 .conditions, 
-.weatherDetails > div > div {
+.weatherDetails > div > div,
+.summaryMain {
     color: rgb(236, 117, 83)
 }
 
@@ -114,4 +126,24 @@ body {
 
 .builderCredit > a:visited {
     color: #1b8dd4;
+}
+
+.unitsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.unitsContainer > button {
+    font-size: 10px;
+    margin: 0;
+    background-color: rgb(57, 57, 57);
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    color: lightgray;
+}
+
+.unitsContainer > button:hover {
+    cursor: pointer;
+    background-color: rgb(72, 72, 72);
 }
