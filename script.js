@@ -50,12 +50,12 @@ function displayData(data) {
     weatherIcon.src = "http://openweathermap.org/img/wn/"+data.icon+"@2x.png";
     locationDiv.textContent = data.location;
     conditions.textContent = capitalizeDescription(data.description) + " & " + data.temp + "°F";;
-    feels.textContent = "Feels like: " + data.feels + "°F";
-    humidity.textContent = "Humidity: " + data.humid + "%";
-    lo.textContent = "LO: " + data.lo + "°F";
-    hi.textContent = "HI: " + data.hi + "°F";
-    windSpeed.textContent = "Wind Speed: " + data.wSpeed + " MPH";
-    windDirection.textContent = "Wind Direction: " + data.wDirection + "°";
+    feels.textContent = data.feels + "°F";
+    humidity.textContent = data.humid + "%";
+    lo.textContent = data.lo + "°F";
+    hi.textContent = data.hi + "°F";
+    windSpeed.textContent = data.wSpeed + " MPH";
+    windDirection.textContent = data.wDirection + "°";
 }
 
 function capitalizeDescription(description) {
