@@ -12,6 +12,7 @@ const locationSearch = document.querySelector("#search");
 const submitBtn = document.querySelector("#submit");
 const imperialBtn = document.querySelector("#imperial");
 const metricBtn = document.querySelector("#metric");
+const favicon = document.querySelector(".favicon");
 let units = "imperial";
 
 submitBtn.addEventListener("click", (e) => {
@@ -66,6 +67,7 @@ function displayData(data, units) {
     let tempUnits = getTempUnits(units);
     let speedUnits = getSpeedUnits(units);
 
+    favicon.href = "http://openweathermap.org/img/wn/"+data.icon+"@2x.png";
     weatherIcon.src = "http://openweathermap.org/img/wn/"+data.icon+"@2x.png";
     locationDiv.textContent = data.location;
     conditions.textContent = capitalizeDescription(data.description);
