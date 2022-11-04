@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    min-height: 100vh;
 }
 
 #search {
@@ -79,4 +80,28 @@ body {
 .conditions, 
 .weatherDetails > div > div {
     color: rgb(236, 117, 83)
+}
+
+.credits {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+} 
+
+.credits > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.builderCredit > a {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.builderCredit > a:visited {
+    color: #1b8dd4;
 }
